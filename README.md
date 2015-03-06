@@ -1,7 +1,6 @@
 # Bartender
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Prototype for an idea that helps someone make a drink from the supplies they've got available.
 
 ## Prerequisites
 
