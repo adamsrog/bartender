@@ -1,0 +1,6 @@
+{{select-2 content=model value=selectedIngredients multiple=true optionValuePath='id' placeholder="Choose ingredients"}}
+<ul>
+{{#each ingredient in model}}
+	<li>{{ingredient.name}}</li>
+{{/each}}
+</ul>

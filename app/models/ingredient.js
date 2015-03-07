@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 var Ingredient = DS.Model.extend({
   name: DS.attr(),
+  text: Ember.computed.alias('name'),
   type: DS.attr(),
   description: DS.attr(),
   equivalents: DS.hasMany('ingredient')
