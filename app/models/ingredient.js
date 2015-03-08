@@ -45,6 +45,41 @@ Ingredient.reopenClass({
 			type: 'liquor',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'gin',
+			name: 'Gin',
+			type: 'liquor',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'lillet-blanc',
+			name: 'Lillet Blanc',
+			type: 'aperitif',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'orange-juice',
+			name: 'Fresh Orange Juice',
+			type: 'juice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'angostura-bitters',
+			name: 'Angostura Bitters',
+			type: 'bitters',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'maraschino-cherry',
+			name: 'Maraschino Cherry',
+			type: 'garnish',
+			description: '',
+			equivalents: []
 		}
 	]
 });
