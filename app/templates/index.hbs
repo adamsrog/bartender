@@ -1,6 +1,18 @@
 {{select-2 content=model.ingredients value=selectedIngredients multiple=true optionValuePath='id' placeholder="Choose ingredients"}}
+
+<hr>
+
 <ul>
 {{#each ingredient in model.ingredients}}
 	<li>{{ingredient.name}}</li>
 {{/each}}
 </ul>
+
+<hr>
+{{#each beverage in model.beverages}}
+	{{beverage.name}}<br>
+	{{beverage.type}}<br>
+	{{#each step in beverage.combined}}
+		{{step}}
+	{{/each}}
+{{/each}}
