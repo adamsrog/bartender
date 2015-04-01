@@ -90,6 +90,13 @@ Ingredient.reopenClass({
 			equivalents: []
 		},
 		{
+			id: 'brown-creme-de-cacao',
+			name: 'Brown Créme De Cacao',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
 			id: 'heavy-cream',
 			name: 'Heavy Cream',
 			type: 'cream',
@@ -123,9 +130,78 @@ Ingredient.reopenClass({
 			type: 'garnish',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'galliano',
+			name: 'Galliano',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'creme-de-banane',
+			name: 'Créme De Banane',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'guava-nectar',
+			name: 'Guava Nectar',
+			type: 'juice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'lime-juice',
+			name: 'Fresh Lime Juice',
+			type: 'juice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'pomegranate-syrup',
+			name: 'Pomegranate Syrup',
+			type: 'Syrup',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'club-soda',
+			name: 'Club Soda',
+			type: 'soda',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'lime-wheel',
+			name: 'Lime Wheel',
+			type: 'garnish',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'orange-blossom',
+			name: 'Orange Blossom',
+			type: 'garnish',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'egg-white',
+			name: 'Egg White',
+			type: 'other',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'grenadine',
+			name: 'Grenadine',
+			type: 'syrup',
+			description: '',
+			equivalents: []
 		}
-
-
+		
 	]
 });
 
