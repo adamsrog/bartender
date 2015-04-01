@@ -1,1 +1,7 @@
-TEST
+<h2>{{model.name}}<br></h2>
+{{#each ingredient in model.combined}}
+	<span class="badge">{{ingredient.amount}} {{ingredient.measurement}}</span> {{ingredient.name}}<br>
+{{/each}}
+<hr>
+<h3>Liquid Contents</h3>
+<section id="pie-chart"></section>
