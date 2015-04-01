@@ -11,12 +11,14 @@ var Beverage = DS.Model.extend({
   tags: DS.attr(),
 
   combined: Ember.computed('amounts', 'ingredients', function() {
-  	var amounts = this.get('amounts');
+  	var _this = this;
+    var amounts = this.get('amounts');
   	var ingredients = this.get('ingredients.content');
   	var combined = [];
   	var count = 0;
-  	ingredients.forEach(function(ingredient) {
-  		combined.push(amounts[count] + ' ' + ingredient.get('name'));
+  	ingredients.forEach(function(ingredient, index) {
+      ingredient.amount = _this.get('amounts')[index];
+  		combined.push(ingredient);
   		count++;
   	});
   	return combined;
