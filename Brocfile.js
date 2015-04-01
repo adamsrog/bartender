@@ -36,4 +36,10 @@ app.import("bower_components/fontawesome/fonts/fontawesome-webfont.woff", { dest
 app.import("bower_components/fontawesome/fonts/fontawesome-webfont.woff2", { destDir: "fonts" });
 app.import("bower_components/fontawesome/fonts/FontAwesome.otf", { destDir: "fonts" });
 
+// import d3.js
+app.import({
+	development: app.bowerDirectory + '/d3/d3.js',
+	production: app.bowerDirectory + '/d3/d3.min.js'
+});
+
 module.exports = app.toTree();

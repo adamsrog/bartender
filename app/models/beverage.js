@@ -31,7 +31,7 @@ Beverage.reopenClass({
 			type: 'cocktail',
 			container: 'cocktail-glass',
 			description: '',
-			// amounts: ['1.5 oz','.75 oz','.75 oz','2 dashes','1'],
+      
       amounts: [
         { amount: 1.5, measurement: 'oz' },
         { amount: 0.75, measurement: 'oz' },
