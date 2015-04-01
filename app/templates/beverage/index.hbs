@@ -1,0 +1,3 @@
+{{#each beverage in model}}
+	{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}
+{{/each}}
