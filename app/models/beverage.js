@@ -38,7 +38,6 @@ Beverage.reopenClass({
         { amount: 0.75, measurement: 'oz' },
         { amount: 2, measurement: 'dash' },
         { amount: 1, measurement: 'count' },
-
       ], 
 			ingredients: ['gin','lillet-blanc','orange-juice','angostura-bitters','maraschino-cherry'],
 			steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.','Garnish with the cherry.'],
