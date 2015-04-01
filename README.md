@@ -1,6 +1,6 @@
 # Bartender
 
-Prototype for an idea that helps someone make a drink from the supplies they've got available.
+Prototype for an idea that helps someone make a drink from the ingredients they've got available.
 
 ## Prerequisites
 
