@@ -81,7 +81,51 @@ Ingredient.reopenClass({
 			type: 'garnish',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'white-creme-de-cacao',
+			name: 'White Créme De Cacao',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'heavy-cream',
+			name: 'Heavy Cream',
+			type: 'cream',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'nutmeg',
+			name: 'Nutmeg (freshly grated)',
+			type: 'spice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'benedictine',
+			name: 'Bénédictine',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'grapefruit-juice',
+			name: 'Fresh Grapefruit Juice',
+			type: 'juice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'orange-slice',
+			name: 'Orange Slice',
+			type: 'garnish',
+			description: '',
+			equivalents: []
 		}
+
+
 	]
 });
 

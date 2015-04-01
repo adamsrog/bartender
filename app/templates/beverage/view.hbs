@@ -1,7 +1,22 @@
-<h2>{{model.name}}<br></h2>
-{{#each ingredient in model.combined}}
-	<span class="badge">{{ingredient.amount}} {{ingredient.measurement}}</span> {{ingredient.name}}<br>
-{{/each}}
-<hr>
-<h3>Liquid Contents</h3>
-{{liquid-content data=model.combined}}
+<div class="row">
+	<div class="col-md-6">
+		<h2>{{model.name}}<br></h2>
+		{{#each ingredient in model.combined}}
+			<span class="badge">{{ingredient.amount}} {{ingredient.measurement}}</span> {{ingredient.name}}<br>
+		{{/each}}
+	</div>
+	<div class="col-md-6">
+		<h3>Steps</h3>
+		<ol>
+		{{#each step in model.steps}}
+			<li>{{step}}</li>
+		{{/each}}
+		</ol>
+	</div>
+</div>
+<div class="row">
+	<hr>
+	<h3>Liquid Contents</h3>
+	{{liquid-content data=model.combined}}
+</div>
+	

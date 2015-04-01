@@ -15,8 +15,8 @@ var Beverage = DS.Model.extend({
   	var ingredients = this.get('ingredients.content');
   	var combined = [];
   	ingredients.forEach(function(ingredient, index) {
-      ingredient.amount = amounts[index].amount;
-      ingredient.measurement = amounts[index].measurement;
+      ingredient.set('amount', amounts[index].amount);
+      ingredient.set('measurement', amounts[index].measurement);
   		combined.push(ingredient);
   	});
   	return combined;
@@ -31,7 +31,6 @@ Beverage.reopenClass({
 			type: 'cocktail',
 			container: 'cocktail-glass',
 			description: '',
-      
       amounts: [
         { amount: 1.5, measurement: 'oz' },
         { amount: 0.75, measurement: 'oz' },
