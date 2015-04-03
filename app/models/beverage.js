@@ -1,9 +1,14 @@
+import Ember from 'ember';
 import DS from 'ember-data';
 
 var Beverage = DS.Model.extend({
   name: DS.attr(),
   type: DS.attr(),
   equipment: DS.belongsTo('equipment', {async: true}),
+  image: Ember.computed('equipment', function() {
+    var equipment = this.get('equipment');
+    return equipment.get('image');
+  }),
   description: DS.attr(),
   amounts: DS.attr(),
   ingredients: DS.hasMany('ingredient', {async: true}),

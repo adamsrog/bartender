@@ -4,8 +4,7 @@ var Equipment = DS.Model.extend({
   name: DS.attr(),
   type: DS.attr(),
   description: DS.attr(),
-  image: DS.attr(),
-  usedWith: DS.hasMany('beverage', {async: true})
+  image: DS.attr()
 });
 
 Equipment.reopenClass({
