@@ -15,7 +15,6 @@ Equipment.reopenClass({
 			type: 'glassware',
 			description: '',
 			image: 'images/cocktail-glass.jpg',
-			usedWith: []
 		},
 		{ 
 			id: "old-fashioned-glass",
@@ -23,7 +22,6 @@ Equipment.reopenClass({
 			type: 'glassware',
 			description: '',
 			image: 'images/old-fashioned-glass.jpg',
-			usedWith: []
 		},
 		{ 
 			id: "highball-glass",
@@ -31,9 +29,7 @@ Equipment.reopenClass({
 			type: 'glassware',
 			description: '',
 			image: 'images/highball-glass.jpg',
-			usedWith: []
 		}
-
 
 	]
 });

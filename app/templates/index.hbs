@@ -2,17 +2,6 @@
 
 <hr>
 
-<ul>
-{{#each ingredient in model.ingredients}}
-	<li>{{ingredient.name}}</li>
-{{/each}}
-</ul>
-
-<hr>
-{{#each beverage in model.beverages}}
-	{{beverage.name}}<br>
-	{{beverage.type}}<br>
-	{{#each step in beverage.combined}}
-		{{step}}
-	{{/each}}
+{{#each ingredient in selectedIngredients}}
+	{{ingredient}}
 {{/each}}

@@ -9,6 +9,8 @@ Router.map(function() {
   this.resource('beverage', function() {
     this.route('view', { path: '/:beverage_id' });
   });
+  this.route('ingredient');
+  this.route('equipment');
 });
 
 export default Router;
