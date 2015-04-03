@@ -1,1 +1,3 @@
-{{outlet}}
+{{#each ingredient in model}}
+	{{#link-to 'ingredient.view' ingredient.id}}{{ingredient.name}}{{/link-to}}<br>
+{{/each}}

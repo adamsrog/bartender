@@ -1,1 +1,3 @@
-{{outlet}}
+{{#each equipment in model}}
+	{{#link-to 'equipment.view' equipment.id}}{{equipment.name}}{{/link-to}}<br>
+{{/each}}
