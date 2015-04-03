@@ -2,10 +2,6 @@
 
 <hr>
 
-{{#each ingredient in selectedIngredients}}
-	{{ingredient}}
-{{/each}}
-
 {{#each beverage in availableBeverages}}
-	{{beverage.name}}
+	{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}<br>
 {{/each}}

@@ -1,3 +1,7 @@
+<ol class="breadcrumb">
+  <li>{{#link-to 'application'}}<i class="fa fa-glass"></i>{{/link-to}}</li>
+  <li class="active">beverages</li>
+</ol>
 {{#each beverage in model}}
 	{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}<br>
 {{/each}}
