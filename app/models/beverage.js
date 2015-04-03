@@ -12,6 +12,7 @@ var Beverage = DS.Model.extend({
   description: DS.attr(),
   amounts: DS.attr(),
   ingredients: DS.hasMany('ingredient', {async: true}),
+  ingredientsArray: DS.attr(),
   steps: DS.attr(),
   tags: DS.attr(),
   similar: DS.hasMany('beverage', {async: true}),
@@ -45,6 +46,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: 'count' },
       ], 
       ingredients: ['gin','lillet-blanc','orange-juice','angostura-bitters','maraschino-cherry'],
+      ingredientsArray: ['gin','lillet-blanc','orange-juice','angostura-bitters','maraschino-cherry'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.','Garnish with the cherry.'],
       tags: [],
       similar: []
@@ -62,6 +64,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: 'pinch' }
       ], 
       ingredients: ['gin','white-creme-de-cacao','heavy-cream','nutmeg'],
+      ingredientsArray: ['gin','white-creme-de-cacao','heavy-cream','nutmeg'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.','Sprinkle with nutmeg.'],
       tags: [],
       similar: ['avalanche']
@@ -79,6 +82,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: 'pinch' }
       ], 
       ingredients: ['gin','brown-creme-de-cacao','heavy-cream','nutmeg'],
+      ingredientsArray: ['gin','brown-creme-de-cacao','heavy-cream','nutmeg'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.','Sprinkle with nutmeg.'],
       tags: [],
       similar: ['alexander']
@@ -96,6 +100,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: 'slice' }
       ], 
       ingredients: ['gin','benedictine','grapefruit-juice','orange-slice'],
+      ingredientsArray: ['gin','benedictine','grapefruit-juice','orange-slice'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.','Garnish with orange slice.'],
       tags: [],
       similar: ['']
@@ -113,6 +118,7 @@ Beverage.reopenClass({
         { amount: 0.5, measurement: 'oz' }
       ], 
       ingredients: ['gin','galliano','creme-de-banane','grapefruit-juice'],
+      ingredientsArray: ['gin','galliano','creme-de-banane','grapefruit-juice'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
       tags: [],
       similar: ['']
@@ -133,6 +139,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: '' },
       ], 
       ingredients: ['gin','guava-nectar','lime-juice','pomegranate-syrup', 'club-soda', 'lime-wheel', 'orange-blossom'],
+      ingredientsArray: ['gin','guava-nectar','lime-juice','pomegranate-syrup', 'club-soda', 'lime-wheel', 'orange-blossom'],
       steps: ['Shake the gin, guava nectar, lime juice, and pomegranate syrup vigorously with ice.','Strain into an ice-filled highball glass.', 'Top with club soda.', 'Garnish with the lime wheel and orange blossom.'],
       tags: [],
       similar: ['']
@@ -150,6 +157,7 @@ Beverage.reopenClass({
         { amount: 0.5, measurement: 'oz' }
       ], 
       ingredients: ['gin','white-creme-de-cacao','egg-white','grenadine'],
+      ingredientsArray: ['gin','white-creme-de-cacao','egg-white','grenadine'],
       steps: ['Shake the gin, créme de cacao, and egg white vigorously with ice.','Strain into a chilled cocktail glass.', 'Drop the grenadine in the center of the drink; do not stir.'],
       tags: [],
       similar: ['']
