@@ -161,8 +161,103 @@ Beverage.reopenClass({
       steps: ['Shake the gin, créme de cacao, and egg white vigorously with ice.','Strain into a chilled cocktail glass.', 'Drop the grenadine in the center of the drink; do not stir.'],
       tags: [],
       similar: ['']
+    },
+    {
+      id: 'bella-bella',
+      name: 'Bella, Bella',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 1, measurement: 'oz' },
+        { amount: 0.66, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 0.66, measurement: 'oz' },
+        { amount: 1, measurement: ''}
+      ], 
+      ingredients: ['gin','campari','limoncello','mandarine-napoleon','orange-juice','lime-peel-spiral'],
+      ingredientsArray: ['gin','campari','limoncello','mandarine-napoleon','orange-juice','lime-peel-spiral'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.', 'Garnish with the lime peel spiral.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'blue-monday',
+      name: 'Blue Monday',
+      type: 'cocktail',
+      equipment: 'highball-glass',
+      description: '',
+      amounts: [
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'dash' },
+        { amount: 4, measurement: 'oz' }
+      ], 
+      ingredients: ['gin','cointreau','blue-curacao','club-soda'],
+      ingredientsArray: ['gin','cointreau','blue-curacao','club-soda'],
+      steps: ['Pour the gin and Cointreau into an ice-filled highball glass.','Add the curaçao.', 'Top with club soda and stir.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'boston-cocktail',
+      name: 'Boston Cocktail',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 1, measurement: 'dash' }
+      ], 
+      ingredients: ['gin','apricot-brandy','lemon-juice','grenadine'],
+      ingredientsArray: ['gin','cointreau','blue-curacao','club-soda'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'bramble',
+      name: 'Bramble',
+      type: 'cocktail',
+      equipment: 'highball-glass',
+      description: '',
+      amounts: [
+        { amount: 5, measurement: 'berries' },
+        { amount: 1, measurement: 'teaspoon' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 4, measurement: 'oz' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['blackberry','sugar','lime-juice','gin','blackberry-liqueur','club-soda','lime-wedge'],
+      ingredientsArray: ['blackberry','sugar','lime-juice','gin','blackberry-liqueur','club-soda','lime-wedge'],
+      steps: ['In the bottom of a chilled highball glass, muddle together the blackberries, sugar and lime juice.', 'Fill the glass with ice and add the gin and blackberry liqueur.', 'Top with club soda and stir briefly.', 'Garnish with the lime wedge.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'bronx-cocktail',
+      name: 'Bronx Cocktail',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 0.75, measurement: 'oz' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','dry-vermouth','sweet-vermouth','orange-juice', 'orange-slice'],
+      ingredientsArray: ['gin','dry-vermouth','sweet-vermouth','orange-juice', 'orange-slice'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.', 'Garnish with the orange slice.'],
+      tags: [],
+      similar: ['']
     }
-
 
 	]
 });
