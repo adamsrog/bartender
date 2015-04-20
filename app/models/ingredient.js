@@ -305,8 +305,77 @@ Ingredient.reopenClass({
 			type: 'aperitif',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'peach-schnapps',
+			name: 'Peach Schnapps',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'mango-juice',
+			name: 'Mango Juice',
+			type: 'juice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'orgeat-syrup',
+			name: 'Orgeat Syrup',
+			type: 'syrup',
+			description: '',
+			equivalents: ['almond-syrup']
+		},
+		{
+			id: 'almond-syrup',
+			name: 'Almond Syrup',
+			type: 'syrup',
+			description: '',
+			equivalents: ['orgeat-syrup']
+		},
+		{
+			id: 'lemon-twist',
+			name: 'Lemon Twist',
+			type: 'garnish',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'cherry-heering',
+			name: 'Cherry Heering',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'creme-de-cassis',
+			name: 'Créme de Cassis',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'simple-syrup',
+			name: 'Simpel Syrup',
+			type: 'syrup',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'mint-sprig',
+			name: 'Mint Sprig',
+			type: 'garnish',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'lemon-slice',
+			name: 'Lemon Slice',
+			type: 'garnish',
+			description: '',
+			equivalents: []
 		}
-
 
 	]
 });

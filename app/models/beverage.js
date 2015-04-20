@@ -257,7 +257,92 @@ Beverage.reopenClass({
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.', 'Garnish with the orange slice.'],
       tags: [],
       similar: ['']
-    }
+    },
+    {
+      id: 'capri-cocktail',
+      name: 'Capri Cocktail',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'dash' }
+      ], 
+      ingredients: ['gin','limoncello','peach-schnapps','grapefruit-juice', 'mango-juice', 'orgeat-syrup'],
+      ingredientsArray: ['gin','limoncello','peach-schnapps','grapefruit-juice', 'mango-juice', 'orgeat'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'caribbean-sunset',
+      name: 'Caribbean Sunset',
+      type: 'cocktail',
+      equipment: 'highball-glass',
+      description: '',
+      amounts: [
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 1, measurement: 'dash' },
+        { amount: 1, measurement: '' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','creme-de-banane','blue-curacao','lemon-juice', 'heavy-cream', 'grenadine', 'orange-slice', 'maraschino-cherry'],
+      ingredientsArray: ['gin','creme-de-banane','blue-curacao','lemon-juice', 'heavy-cream', 'grenadine', 'orange-slice', 'maraschino-cherry'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into an ice-filled highball glass.','Garnish with the orange slice and cherry.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'chelsea-sidecar',
+      name: 'Chelsea Sidecar',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: 'This variation of the Sidecar is made with gin instead of Cognac. This is a signature drink from the Chelsea Hotel in New York.',
+      amounts: [
+        { amount: 1, measurement: '' },
+        { amount: 2, measurement: 'oz' },
+        { amount: 0.75, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' }
+      ], 
+      ingredients: ['lemon-twist','gin','cointreau','lemon-juice'],
+      ingredientsArray: ['lemon-twist','gin','cointreau','lemon-juice'],
+      steps: ['Rub the rim of a chilled cocktail glass with the lemon peel.','Shake the liquid ingredients vigorously with ice.','Strain into the prepared cocktail glass.','Garnish with the lemon twist.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'cherry-cobbler',
+      name: 'Cherry Cobbler',
+      type: 'cocktail',
+      equipment: 'old-fashioned-glass',
+      description: '',
+      amounts: [
+        { amount: 2, measurement: 'oz' },
+        { amount: 0.75, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 3, measurement: 'oz' },
+        { amount: 1, measurement: '' },
+        { amount: 1, measurement: '' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','cherry-heering','creme-de-cassis','lemon-juice','simple-syrup','club-soda','lemon-slice','maraschino-cherry','mint-sprig'],
+      ingredientsArray: ['gin','cherry-heering','creme-de-cassis','lemon-juice','simple-syrup','club-soda','lemon-slice','maraschino-cherry','mint-sprig'],
+      steps: ['Shake all the liquid ingredients except the club soda vigorously with ice.','Strain into an old-fashioned glass.','Top with club soda.','Garnish with the lemon slice, cherry and mint sprig.'],
+      tags: [],
+      similar: ['']
+    },
+
+
 
 	]
 });
