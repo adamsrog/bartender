@@ -200,8 +200,114 @@ Ingredient.reopenClass({
 			type: 'syrup',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'campari',
+			name: 'Campari',
+			type: 'aperitif',
+			description: 'Campari is an alcoholic liqueur, considered an apéritif, obtained from the infusion of herbs and fruit in alcohol and water. It is a bitter characterised by its dark red colour.',
+			equivalents: []
+		},
+		{
+			id: 'limoncello',
+			name: 'Limoncello',
+			type: 'liqueur',
+			description: 'Limoncello is an Italian lemon liqueur mainly produced in Southern Italy, especially in the region around the Gulf of Naples, the Sorrentine Peninsula and the coast of Amalfi, and islands of Procida, Ischia, and Capri.',
+			equivalents: []
+		},
+		{
+			id: 'mandarine-napoleon',
+			name: 'Mandarine Napoléon',
+			type: 'liqueur',
+			description: 'The orange liqueur was created for Napoleon Bonaparte in late 1700s or very early 1800s and was first sold to the public in 1892.',
+			equivalents: ['cointreau','triple-sec']
+		},
+		{
+			id: 'lime-peel-spiral',
+			name: 'Lime Peel Spiral',
+			type: 'garnish',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'cointreau',
+			name: 'Cointreau',
+			type: 'liqueur',
+			description: '',
+			equivalents: ['triple-sec']
+		},
+		{
+			id: 'triple-sec',
+			name: 'Triple Sec',
+			type: 'liqueur',
+			description: '',
+			equivalents: ['cointreau']
+		},
+		{
+			id: 'blue-curacao',
+			name: 'Blue Curaçao',
+			type: 'liqueur',
+			description: 'Curaçao is a liqueur flavored with the dried peel of the laraha citrus fruit, grown on the island of Curaçao. A non-native plant similar to an orange, the laraha developed from the sweet Valencia orange transplanted by Spanish explorers.',
+			equivalents: ['']
+		},
+		{
+			id: 'apricot-brandy',
+			name: 'Apricot Brandy',
+			type: 'liquor',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'lemon-juice',
+			name: 'Lemon Juice',
+			type: 'juice',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'sugar',
+			name: 'Sugar',
+			type: 'sweetener',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'blackberry',
+			name: 'Blackberry',
+			type: 'fruit',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'blackberry-liqueur',
+			name: 'Blackberry Liqueur',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'lime-wedge',
+			name: 'Lime Wedge',
+			type: 'fruit',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'dry-vermouth',
+			name: 'Dry Vermouth',
+			type: 'aperitif',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'sweet-vermouth',
+			name: 'Sweet Vermouth',
+			type: 'aperitif',
+			description: '',
+			equivalents: []
 		}
-		
+
+
 	]
 });
 
