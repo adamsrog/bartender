@@ -9,6 +9,34 @@ var Equipment = DS.Model.extend({
 
 Equipment.reopenClass({
 	FIXTURES: [
+		{
+			id: "beer-mug",
+			name: "Beer Mug",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "brandy-snifter",
+			name: "Brandy Snifter",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "champagne-coupe",
+			name: "Champagne Coupe",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "champagne-flute",
+			name: "Champagne Flute",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
 		{ 
 			id: "cocktail-glass",
 			name: 'Cocktail Glass',
@@ -16,12 +44,19 @@ Equipment.reopenClass({
 			description: '',
 			image: 'images/cocktail-glass.jpg',
 		},
-		{ 
-			id: "old-fashioned-glass",
-			name: 'Old-Fashioned Glass',
-			type: 'glassware',
-			description: '',
-			image: 'images/old-fashioned-glass.jpg',
+		{
+			id: "collins-glass",
+			name: "Collins Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "cordial-glass",
+			name: "Cordial Glass",
+			type: "glassware",
+			description: "",
+			image: ""
 		},
 		{ 
 			id: "highball-glass",
@@ -29,6 +64,125 @@ Equipment.reopenClass({
 			type: 'glassware',
 			description: '',
 			image: 'images/highball-glass.jpg',
+		},
+		{
+			id: "hurricane-glass",
+			name: "Hurricane Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "irish-coffee-glass",
+			name: "Irish Coffee Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "margarita-glass",
+			name: "Margarita Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "martini-glass",
+			name: "Martini Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},		
+		{ 
+			id: "old-fashioned-glass",
+			name: 'Old-Fashioned Glass',
+			type: 'glassware',
+			description: '',
+			image: 'images/old-fashioned-glass.jpg',
+		},
+		{
+			id: "double-old-fashioned-glass",
+			name: "Double Old-Fashioned Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "parfait-glass",
+			name: "Parfait Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "pilsner-glass",
+			name: "Pilsner Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "pony-glass",
+			name: "Pony Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "pousse-cafe-glass",
+			name: "Pousse-Cafe Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "punch-cup",
+			name: "Punch Cup",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "sherry-port-glass",
+			name: "Sherry or Port Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "shot-glass",
+			name: "Shot Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "sour-glass",
+			name: "Sour Glass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "wineglass",
+			name: "Wineglass",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "wineglass-red",
+			name: "Wineglass (Red)",
+			type: "glassware",
+			description: "",
+			image: ""
+		},
+		{
+			id: "wineglass-white",
+			name: "Wineglass (White)",
+			type: "glassware",
+			description: "",
+			image: ""
 		},
 		{
 			id: "absinthe-spoon",
