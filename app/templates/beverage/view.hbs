@@ -6,6 +6,9 @@
 <div class="row">
 	<div class="col-md-6">
 		<h2>{{model.name}}<br></h2>
+		{{#each model.combined as ingredient}}
+			{{ingredient.amount}}
+		{{/each}}
 		{{#each ingredient in model.combined}}
 			<span class="badge">{{ingredient.amount}} {{ingredient.measurement}}</span> {{ingredient.name}}<br>
 		{{/each}}
