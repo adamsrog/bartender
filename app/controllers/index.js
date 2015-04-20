@@ -25,9 +25,8 @@ export default Ember.Controller.extend({
 				if (ingredients.contains(ingredient)) {
 					var name = beverage.get('name');
 					console.log('match found ->', ingredient, 'is in', name);
-					if (!filteredBeverages[name]) {
-						console.log('aint shit here breh');
-						filteredBeverages[name] = {};
+					if (!filteredBeverages[name]) {	
+						filteredBeverages[name] = {};	
 					}
 					
 					filteredBeverages[name].beverage = beverage;
@@ -40,16 +39,15 @@ export default Ember.Controller.extend({
 			});
 		});
 
-		// selectedIngredients.forEach(function(ingredient) {
-		// 	console.log('ingredient', ingredient);
-		// 	availableBeverages = beverages.filter(function(beverage, index) {
-		// 		var ingredients = beverage.get('ingredientsArray');
-		// 		console.log('drink', index, 'bevid', beverage.id, ingredients, ingredients.contains(ingredient));
-		// 		return ingredients.contains(ingredient);
-		// 	});
-		// });
+		for (var key in filteredBeverages) {
+			if (filteredBeverages.hasOwnProperty(key)) {
+				console.log(filteredBeverages[key]);
+				filteredBeverages[key].beverage.set('rank', filteredBeverages[key].rank);
+				availableBeverages.push(filteredBeverages[key].beverage);
+			}
+		}
 
-		console.log('finished', filteredBeverages);
-		return availableBeverages;
+		console.log('finished', filteredBeverages, availableBeverages);
+		return availableBeverages.sortBy('rank').reverse();
 	})
 });

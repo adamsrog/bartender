@@ -3,5 +3,7 @@
 <hr>
 
 {{#each beverage in availableBeverages}}
-	{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}<br>
+	<span class="badge">{{beverage.rank}} of {{beverage.ingredientsArray.length}}</span> {{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}<br>
+{{else}}
+	<p>Nothing to display</p>
 {{/each}}
