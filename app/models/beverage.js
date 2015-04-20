@@ -213,7 +213,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: 'dash' }
       ], 
       ingredients: ['gin','apricot-brandy','lemon-juice','grenadine'],
-      ingredientsArray: ['gin','cointreau','blue-curacao','club-soda'],
+      ingredientsArray: ['gin','apricot-brandy','lemon-juice','grenadine'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
       tags: [],
       similar: ['']
@@ -341,8 +341,76 @@ Beverage.reopenClass({
       tags: [],
       similar: ['']
     },
-
-
+    {
+      id: 'coco-chanel',
+      name: 'Coco Chanel',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' }
+      ], 
+      ingredients: ['gin','kahlua','heavy-cream'],
+      ingredientsArray: ['gin','kahlua','heavy-cream'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'costa-del-sol',
+      name: 'Costa del Sol',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 2, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' },
+        { amount: 1, measurement: 'oz' }
+      ], 
+      ingredients: ['gin','cointreau','apricot-brandy'],
+      ingredientsArray: ['gin','cointreau','apricot-brandy'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'crimson',
+      name: 'Crimson',
+      type: 'cocktail',
+      equipment: 'cocktail-glass',
+      description: '',
+      amounts: [
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 0.25, measurement: 'oz' },
+        { amount: 0.75, measurement: 'oz' }
+      ], 
+      ingredients: ['gin','lemon-juice','grenadine','ruby-port'],
+      ingredientsArray: ['gin','lemon-juice','grenadine','ruby-port'],
+      steps: ['Shake the gin, lemon juice and grenadine vigorously with ice.','Strain into a chilled cocktail glass.','Float the port on top.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'dawn',
+      name: 'Dawn',
+      type: 'cocktail',
+      equipment: 'old-fashioned-glass',
+      description: '',
+      amounts: [
+        { amount: 1, measurement: 'oz' },
+        { amount: 0.75, measurement: 'oz' },
+        { amount: 1.75, measurement: 'oz' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','campari','orange-juice','orange-slice'],
+      ingredientsArray: ['gin','campari','orange-juice','orange-slice'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into an ice-filled old-fashioned glass.','Garnish with the orange slice.'],
+      tags: [],
+      similar: ['']
+    }
 
 	]
 });

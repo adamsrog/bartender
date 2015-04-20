@@ -375,6 +375,20 @@ Ingredient.reopenClass({
 			type: 'garnish',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'kahlua',
+			name: 'Kahlúa',
+			type: 'liqueur',
+			description: '',
+			equivalents: []
+		},
+		{
+			id: 'ruby-port',
+			name: 'Ruby Port',
+			type: 'wine',
+			description: '',
+			equivalents: []
 		}
 
 	]
