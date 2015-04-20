@@ -16,20 +16,18 @@ export default Ember.Controller.extend({
 		var availableBeverages = [];
 		var filteredBeverages = {};
 		var selectedIngredients = this.get('selectedIngredients');
-		console.log('sorting', beverages, selectedIngredients);
 
 		selectedIngredients.forEach(function(ingredient) {
-			console.log('current ingredient: ', ingredient);
 			beverages.forEach(function(beverage) {
 				var ingredients = beverage.get('ingredientsArray');
 				if (ingredients.contains(ingredient)) {
 					var name = beverage.get('name');
-					console.log('match found ->', ingredient, 'is in', name);
 					if (!filteredBeverages[name]) {	
 						filteredBeverages[name] = {};	
 					}
-					
 					filteredBeverages[name].beverage = beverage;
+
+					// adjust ranking for match
 					if (filteredBeverages[name].rank) {
 						filteredBeverages[name].rank++
 					} else {
@@ -39,15 +37,15 @@ export default Ember.Controller.extend({
 			});
 		});
 
+		// turn object back into an array
 		for (var key in filteredBeverages) {
 			if (filteredBeverages.hasOwnProperty(key)) {
-				console.log(filteredBeverages[key]);
 				filteredBeverages[key].beverage.set('rank', filteredBeverages[key].rank);
 				availableBeverages.push(filteredBeverages[key].beverage);
 			}
 		}
 
-		console.log('finished', filteredBeverages, availableBeverages);
+		// return array that is sorted by rank descending
 		return availableBeverages.sortBy('rank').reverse();
 	})
 });
