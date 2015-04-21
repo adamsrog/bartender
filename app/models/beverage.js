@@ -273,7 +273,7 @@ Beverage.reopenClass({
         { amount: 1, measurement: 'dash' }
       ], 
       ingredients: ['gin','limoncello','peach-schnapps','grapefruit-juice', 'mango-juice', 'orgeat-syrup'],
-      ingredientsArray: ['gin','limoncello','peach-schnapps','grapefruit-juice', 'mango-juice', 'orgeat'],
+      ingredientsArray: ['gin','limoncello','peach-schnapps','grapefruit-juice', 'mango-juice', 'orgeat-syrup'],
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.'],
       tags: [],
       similar: ['']
@@ -410,7 +410,65 @@ Beverage.reopenClass({
       steps: ['Shake the liquid ingredients vigorously with ice.','Strain into an ice-filled old-fashioned glass.','Garnish with the orange slice.'],
       tags: [],
       similar: ['']
-    }
+    },
+    {
+      id: 'death-in-the-gulf-stream',
+      name: 'Death in the Gulf Stream`',
+      type: 'cocktail',
+      equipment: 'highball-glass',
+      description: 'Ernest Hemingway created this hangover remedy. According to Hemingway, it is "tart and bitter - reviving and refreshing".',
+      amounts: [
+        { amount: 2, measurement: 'oz' },
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 4, measurement: 'dash' },
+        { amount: 1, measurement: 'pinch' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','lime-juice','angostura-bitters','sugar','lime-peel-spiral'],
+      ingredientsArray: ['gin','lime-juice','angostura-bitters','sugar','lime-peel-spiral'],
+      steps: ['Pour the gin and lime juice into an ice-filled highball glass.','Add the sugar and bitters and stir to combine.','Twist the lime peel spiral over the drink and drop it in.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'delmonico-number-1',
+      name: 'Delmonico Number 1',
+      type: 'cocktail',
+      equipment: 'sour-glass',
+      description: 'This is the house cocktail from New York\'s famous Delmonico restaurant, a classic that predates Prohibition. Traditionally served in a Delmonico glass (similar to a sour glass), it can be garnished with either a lemon or orange twist.',
+      amounts: [
+        { amount: 1, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 2, measurement: 'dash' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','brandy','dry-vermouth','sweet-vermouth','angostura-bitters', 'lemon-twist'],
+      ingredientsArray: ['gin','brandy','dry-vermouth','sweet-vermouth','angostura-bitters', 'lemon-twist'],
+      steps: ['Shake the liquid ingredients vigorously with ice.','Strain into a chilled cocktail glass.','Garnish with the lemon twist.'],
+      tags: [],
+      similar: ['']
+    },
+    {
+      id: 'desert-healer-cocktail',
+      name: 'Desert Healer Cocktail',
+      type: 'cocktail',
+      equipment: 'highball-glass',
+      description: '',
+      amounts: [
+        { amount: 1.5, measurement: 'oz' },
+        { amount: 0.5, measurement: 'oz' },
+        { amount: 3, measurement: 'oz' },
+        { amount: 5, measurement: 'oz' },
+        { amount: 1, measurement: '' }
+      ], 
+      ingredients: ['gin','cherry-brandy','orange-juice','ginger-beer','orange-slice'],
+      ingredientsArray: ['gin','cherry-brandy','orange-juice','ginger-beer','orange-slice'],
+      steps: ['Shake the gin, cherry brandy and orange juice vigorously with ice.','Strain into an ice-filled highball glass.','Top with ginger beer and stir gently.', 'Garnish with the orange slice.'],
+      tags: [],
+      similar: ['']
+    },
 
 	]
 });

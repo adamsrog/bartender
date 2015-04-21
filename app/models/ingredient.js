@@ -389,6 +389,34 @@ Ingredient.reopenClass({
 			type: 'wine',
 			description: '',
 			equivalents: []
+		},
+		{
+			id: 'brandy',
+			name: 'Brandy',
+			type: 'liquor',
+			description: 'Brandy is a spirit produced by distilling wine. Brandy generally contains 35–60% alcohol by volume and is typically taken as an after-dinner drink.',
+			equivalents: ['cognac']
+		},
+		{
+			id: 'cherry-brandy',
+			name: 'Cherry Brandy',
+			type: 'liquor',
+			description: 'Brandy is a spirit produced by distilling wine. Brandy generally contains 35–60% alcohol by volume and is typically taken as an after-dinner drink.',
+			equivalents: []
+		},
+		{
+			id: 'cognac',
+			name: 'Cognac',
+			type: 'liquor',
+			description: 'Cognac, named after the town of Cognac in France, is a variety of brandy. It is produced in the wine-growing region surrounding the town from which it takes its name, in the French Departements of Charente and Charente-Maritime.',
+			equivalents: ['brandy']
+		},
+		{
+			id: 'ginger-beer',
+			name: 'Ginger Beer',
+			type: 'beer',
+			description: 'Ginger beer is carbonated, sweetened beverage produced in two versions: alcoholic brewed ginger beer or a carbonated soft drink flavored primarily with ginger and sweetened with sugar or artificial sweeteners.',
+			equivalents: []
 		}
 
 	]
