@@ -1,6 +1,7 @@
 <ul class="collection">
 	{{#each ingredient in model}}
 		{{#link-to 'ingredient.view' ingredient.id class="collection-item"}}
+			<span class="badge blue lighten-4">{{ingredient.type}}</span>
 			{{ingredient.name}}
 		{{/link-to}}
 	{{/each}}

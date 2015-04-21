@@ -13,9 +13,9 @@
 		<ul class="collection">
 		{{#each ingredient in model.combined}}
 			<li class="collection-item">
-				{{#materialize-badge class="blue lighten-4"}}
+				<span class="badge blue lighten-4">
 					{{ingredient.amount}} {{ingredient.measurement}}
-				{{/materialize-badge}}
+				</span>
 				{{ingredient.name}}
 			</li>
 		{{/each}}

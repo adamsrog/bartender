@@ -236,21 +236,21 @@ Equipment.reopenClass({
 		{
 			id: "citrus-spout",
 			name: "Citrus Spout",
-			type: "",
+			type: "tool",
 			description: "",
 			image: ""
 		},
 		{
 			id: "citrus-squeezer",
 			name: "Citrus Squeezer",
-			type: "",
+			type: "tool",
 			description: "",
 			image: ""
 		},
 		{
 			id: "citrus-stripper",
 			name: "Citrus Stripper",
-			type: "",
+			type: "tool",
 			description: "",
 			image: ""
 		},
