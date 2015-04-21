@@ -18,14 +18,14 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 
 // import Bootstrap
-app.import({
-	development: 'bower_components/bootstrap/dist/css/bootstrap.css',
-	production: 'bower_components/bootstrap/dist/css/bootstrap.min.css'
-});
-app.import({
-	development: 'bower_components/bootstrap/dist/js/bootstrap.js',
-	production: 'bower_components/bootstrap/dist/js/bootstrap.min.js'
-});
+// app.import({
+// 	development: 'bower_components/bootstrap/dist/css/bootstrap.css',
+// 	production: 'bower_components/bootstrap/dist/css/bootstrap.min.css'
+// });
+// app.import({
+// 	development: 'bower_components/bootstrap/dist/js/bootstrap.js',
+// 	production: 'bower_components/bootstrap/dist/js/bootstrap.min.js'
+// });
 
 // import font awesome
 app.import('bower_components/fontawesome/css/font-awesome.css');
