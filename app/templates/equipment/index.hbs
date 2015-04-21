@@ -1,7 +1,7 @@
-<ol class="breadcrumb">
-  <li>{{#link-to 'application'}}<i class="fa fa-glass"></i>{{/link-to}}</li>
-  <li class="active">equipment</li>
-</ol>
-{{#each equipment in model}}
-	{{#link-to 'equipment.view' equipment.id}}{{equipment.name}}{{/link-to}}<br>
-{{/each}}
+<ul class="collection">
+	{{#each equipment in model}}
+		{{#link-to 'equipment.view' equipment.id class="collection-item"}}
+			{{equipment.name}}
+		{{/link-to}}
+	{{/each}}
+</ul>

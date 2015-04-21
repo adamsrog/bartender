@@ -1,9 +1,27 @@
-{{select-2 content=model.ingredients value=selectedIngredients multiple=true optionValuePath='id' placeholder="Choose ingredients"}}
-
+<div class="row">
+	<h5>What ingredients do you have?</h5>
+	<form class="col s12">
+	{{select-2 content=model.ingredients 
+		value=selectedIngredients 
+		multiple=true 
+		optionValuePath='id' 
+		placeholder="Choose ingredients"
+		allowClear=true
+		}}
+	</form>
+</div>
 <hr>
-
-{{#each beverage in availableBeverages}}
-	<span class="badge">{{beverage.rank}} of {{beverage.ingredientsArray.length}}</span> {{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}<br>
-{{else}}
-	<p>Nothing to display</p>
-{{/each}}
+<div class="row">
+	<ul class="collection">
+	{{#each beverage in availableBeverages}}
+		<li class="collection-item">
+			{{#materialize-badge class="red lighten-4"}}
+				{{beverage.rank}} of {{beverage.ingredientsArray.length}}
+			{{/materialize-badge}}
+			{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}
+		</li>
+	{{else}}
+		<li class="collection-item">Nothing to display</li>
+	{{/each}}
+	</ul>
+</div>
