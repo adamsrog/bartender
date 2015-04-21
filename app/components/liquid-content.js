@@ -8,9 +8,9 @@ export default Ember.Component.extend({
 	// http://flatuicolors.com/
 	palette: ['#16a085', '#27ae60', '#2980b9', '#8e44ad', '#2c3e50', '#f39c12', '#d35400', '#c0392b', '#bdc3c7', '#7f8c8d'],
 
-	height: 400,
-	width: 400,
-	radius: 200,
+	height: 350,
+	width: 350,
+	radius: 175,
 
 	piedata: Ember.computed('data', function() {
 		var data = this.get('data');

@@ -413,7 +413,7 @@ Beverage.reopenClass({
     },
     {
       id: 'death-in-the-gulf-stream',
-      name: 'Death in the Gulf Stream`',
+      name: 'Death in the Gulf Stream',
       type: 'cocktail',
       equipment: 'highball-glass',
       description: 'Ernest Hemingway created this hangover remedy. According to Hemingway, it is "tart and bitter - reviving and refreshing".',
