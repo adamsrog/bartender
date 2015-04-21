@@ -1,16 +1,38 @@
-<div class="navbar-fixed">
-	<nav role="navigation" class="blue">
-		<div class="nav-wrapper container">
-			{{#link-to 'index' class="brand-logo"}}<i class="fa fa-glass"> <small>bartender</small></i>{{/link-to}}
-			<ul id="nav-mobile" class="right hide-on-med-and-down">
-				<li>{{#link-to 'beverage'}}drinks{{/link-to}}</li>
-				<li>{{#link-to 'ingredient'}}ingredients{{/link-to}}</li>
-				<li>{{#link-to 'equipment'}}equipment{{/link-to}}</li>
-			</ul>
-		</div>
-	</nav>
-</div>
+<div id="wrapper">
+	<div class="navbar-fixed">
+		<nav role="navigation">
+			<div class="nav-wrapper container">
+				{{#link-to 'index' class="brand-logo"}}<i class="fa fa-glass"> <small>bartender</small></i>{{/link-to}}
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li>{{#link-to 'beverage'}}drinks{{/link-to}}</li>
+					<li>{{#link-to 'ingredient'}}ingredients{{/link-to}}</li>
+					<li>{{#link-to 'equipment'}}equipment{{/link-to}}</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
-<div class="container">
-	{{outlet}}
+	<div id="content" class="container">
+		{{outlet}}
+	</div>
+
+	<footer class="page-footer" class="blue lighten-2">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text"></h5>
+					<p class="grey-text text-lighten-4"></p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text"></h5>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				<a href="https://twitter.com/rogdev" target="_blank" class="grey-text text-lighten-4">@rogdev</a>
+				<a href="https://github.com/adamsrog/bartender" target="_blank" class="grey-text text-lighten-4 right">github</a>
+			</div>
+		</div>
+	</footer>
 </div>

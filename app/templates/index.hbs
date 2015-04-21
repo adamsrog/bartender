@@ -6,8 +6,7 @@
 		multiple=true 
 		optionValuePath='id' 
 		placeholder="Choose ingredients"
-		allowClear=true
-		}}
+		allowClear=true}}
 	</form>
 </div>
 <hr>
@@ -15,7 +14,7 @@
 	<ul class="collection">
 	{{#each beverage in availableBeverages}}
 		<li class="collection-item">
-			{{#materialize-badge class="red lighten-4"}}
+			{{#materialize-badge class="green lighten-4"}}
 				{{beverage.rank}} of {{beverage.ingredientsArray.length}}
 			{{/materialize-badge}}
 			{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}
