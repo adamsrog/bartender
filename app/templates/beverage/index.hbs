@@ -1,5 +1,11 @@
+<div class="row">
+	<div class="col s12 m4">
+		{{materialize-input value=searchQuery label="Search by beverage name" icon="mdi-action-search"}}
+	</div>
+</div>
+
 <ul class="collection">
-	{{#each beverage in model}}
+	{{#each beverage in filteredList}}
 		{{#link-to 'beverage.view' beverage.id class="collection-item"}}
 			{{beverage.name}}
 		{{/link-to}}

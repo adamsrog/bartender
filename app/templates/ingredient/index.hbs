@@ -1,5 +1,11 @@
+<div class="row">
+	<div class="col s12 m4">
+		{{materialize-input value=searchQuery label="Search by equipment name" icon="mdi-action-search"}}
+	</div>
+</div>
+
 <ul class="collection">
-	{{#each ingredient in model}}
+	{{#each ingredient in filteredList}}
 		{{#link-to 'ingredient.view' ingredient.id class="collection-item"}}
 			<span class="badge blue lighten-4">{{ingredient.type}}</span>
 			{{ingredient.name}}
