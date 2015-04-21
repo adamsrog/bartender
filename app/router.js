@@ -15,4 +15,5 @@ export default Router.map(function() {
   this.resource('equipment', function() {
     this.route('view', { path: '/:equipment_id' });
   });
+  this.route('about');
 });

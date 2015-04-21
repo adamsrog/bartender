@@ -56,7 +56,7 @@ Beverage.reopenClass({
       name: 'Alexander',
       type: 'cocktail',
       equipment: 'cocktail-glass',
-      description: 'Dating from the 1920s, the original Alexander was made with gin, but the brandy version has become more popular.',
+      description: 'Dating from the 1920s, the original Alexander was made with gin, but the brandy version has become more popular. The Alexander is said to be named after Czar Alexander II of Russia.',
       amounts: [
         { amount: 1.0, measurement: 'oz' },
         { amount: 0.75, measurement: 'oz' },
@@ -223,7 +223,7 @@ Beverage.reopenClass({
       name: 'Bramble',
       type: 'cocktail',
       equipment: 'highball-glass',
-      description: '',
+      description: 'An alternative to the Cosmopolitan, the Bramble was created in 1984 by Dick Bradsell at Fred’s Club in London’s Soho. This sweet classic drink is still the chosen drink of many all over the United Kingdom.',
       amounts: [
         { amount: 5, measurement: 'berries' },
         { amount: 1, measurement: 'teaspoon' },

@@ -4,6 +4,18 @@
  
 // Custom color settings go here 
 $primary-color: color("blue", "lighten-2");
+$primary-color-light: false !default;
+$primary-color-dark: false !default;
+@if not $primary-color-light {
+  $primary-color-light: lighten($primary-color, 15%);
+}
+@if not $primary-color-dark {
+  $primary-color-dark: darken($primary-color, 15%);
+}
+$secondary-color: color("blue", "lighten-1") !default;
+$success-color: color("green", "base") !default;
+$error-color: color("red", "base") !default;
+$link-color: color("light-blue", "darken-1") !default;
 
 @import 'materialize';
 
@@ -36,4 +48,32 @@ footer {
 #wrapper {
 	min-height:100%;
 	position:relative;
+}
+
+#showcase .content h1 {
+  font-family: "exolight", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+  font-size: 3.5em;
+  color: white;
+  // text-shadow: 0 2px #742416;
+}
+
+#showcase .content h1 span {
+  width: 56px;
+  top: -15px;
+  color: #b3230a;
+  padding: .04em .4em .04em .3em;
+  font-size: .75em;
+  border-bottom: 3px solid #d66f5d;
+  text-shadow: 0 1px white;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  border-radius: 7px;
+  background-color: #f9a091;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#f9a091));
+  background-image: -webkit-linear-gradient(top, white, #f9a091);
+  background-image: -moz-linear-gradient(top, white, #f9a091);
+  background-image: -o-linear-gradient(top, white, #f9a091);
+  background-image: linear-gradient(to bottom, white, #f9a091);
 }
