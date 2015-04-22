@@ -4,16 +4,18 @@
 			<div class="nav-wrapper container">
 				{{#link-to 'index' class="brand-logo"}}<i class="fa fa-glass"> <small>bartender</small></i>{{/link-to}}
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li>{{#link-to 'beverage'}}drinks{{/link-to}}</li>
-					<li>{{#link-to 'ingredient'}}ingredients{{/link-to}}</li>
-					<li>{{#link-to 'equipment'}}equipment{{/link-to}}</li>
-					<li>{{#link-to 'about'}}about{{/link-to}}</li>
+					{{#link-to 'index' tagName="li"}}<a>home</a>{{/link-to}}
+					{{#link-to 'beverage' tagName="li"}}<a>drinks</a>{{/link-to}}
+					{{#link-to 'ingredient' tagName="li"}}<a>ingredients</a>{{/link-to}}
+					{{#link-to 'equipment' tagName="li"}}<a>equipment</a>{{/link-to}}
+					{{#link-to 'about' tagName="li"}}<a>about</a>{{/link-to}}
 				</ul>
 				<ul id="slide-out" class="side-nav">
-					<li>{{#link-to 'beverage'}}drinks{{/link-to}}</li>
-					<li>{{#link-to 'ingredient'}}ingredients{{/link-to}}</li>
-					<li>{{#link-to 'equipment'}}equipment{{/link-to}}</li>
-					<li>{{#link-to 'about'}}about{{/link-to}}</li>
+					{{#link-to 'index' tagName="li"}}<a>home</a>{{/link-to}}
+					{{#link-to 'beverage' tagName="li"}}<a>drinks</a>{{/link-to}}
+					{{#link-to 'ingredient' tagName="li"}}<a>ingredients</a>{{/link-to}}
+					{{#link-to 'equipment' tagName="li"}}<a>equipment</a>{{/link-to}}
+					{{#link-to 'about' tagName="li"}}<a>about</a>{{/link-to}}
 				</ul>
 				<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 			</div>
