@@ -7,7 +7,7 @@ var Ingredient = DS.Model.extend({
   text: Ember.computed.alias('name'),
   type: DS.attr(),
   description: DS.attr(),
-  equivalents: DS.hasMany('ingredient')
+  equivalents: DS.hasMany('ingredient', {async:true})
 });
 
 Ingredient.reopenClass({

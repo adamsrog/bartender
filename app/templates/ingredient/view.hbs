@@ -5,5 +5,11 @@
 			<p class="flow-text">{{model.description}}</p>
 		{{/if}}
 		<hr>
+		{{#if model.equivalents}}
+			<h5>Equivalent Ingredients</h5>
+			{{#each ingredient in model.equivalents}}
+				{{#link-to 'ingredient.view' ingredient.id}}{{ingredient.name}}{{/link-to}}
+			{{/each}}
+		{{/if}}
 	</div>
 </div>
