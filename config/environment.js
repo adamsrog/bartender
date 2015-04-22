@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'bartender',
     environment: environment,
+    firebase: 'https://fiery-torch-7549.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -25,7 +26,7 @@ module.exports = function(environment) {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-inline' 'unsafe-eval' 'google-analytics.com'",
       'font-src': "'self'",
-      'connect-src': "'self'",
+      'connect-src': "'self' wss://fiery-torch-7549.firebaseio.com wss://s-dal5-nss-17.firebaseio.com",
       'img-src': "'self' *",
       'style-src': "'self' 'unsafe-inline'",
       'report-uri': "'none'"

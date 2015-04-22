@@ -16,6 +16,7 @@
     "select2": "~3.5.2",
     "fontawesome": "~4.3.0",
     "d3": "~3.5.5",
-    "materialize": "~0.96.0"
+    "materialize": "~0.96.0",
+    "firebase": "^2.1.0"
   }
 }
