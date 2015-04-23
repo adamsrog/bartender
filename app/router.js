@@ -6,13 +6,14 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.resource('beverage', function() {
+  this.route('beverage', function() {
     this.route('view', { path: '/:beverage_id' });
+    this.route('new');
   });
-  this.resource('ingredient', function() {
+  this.route('ingredient', function() {
     this.route('view', { path: '/:ingredient_id' });
   });
-  this.resource('equipment', function() {
+  this.route('equipment', function() {
     this.route('view', { path: '/:equipment_id' });
   });
   this.route('about');
