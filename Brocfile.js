@@ -17,26 +17,6 @@ var app = new EmberApp();
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
-// import Bootstrap
-// app.import({
-// 	development: 'bower_components/bootstrap/dist/css/bootstrap.css',
-// 	production: 'bower_components/bootstrap/dist/css/bootstrap.min.css'
-// });
-// app.import({
-// 	development: 'bower_components/bootstrap/dist/js/bootstrap.js',
-// 	production: 'bower_components/bootstrap/dist/js/bootstrap.min.js'
-// });
-
-// import font awesome
-app.import('bower_components/fontawesome/css/font-awesome.css');
-app.import("bower_components/fontawesome/fonts/fontawesome-webfont.eot", { destDir: "fonts" });
-app.import("bower_components/fontawesome/fonts/fontawesome-webfont.svg", { destDir: "fonts" });
-app.import("bower_components/fontawesome/fonts/fontawesome-webfont.ttf", { destDir: "fonts" });
-app.import("bower_components/fontawesome/fonts/fontawesome-webfont.woff", { destDir: "fonts" });
-app.import("bower_components/fontawesome/fonts/fontawesome-webfont.woff2", { destDir: "fonts" });
-app.import("bower_components/fontawesome/fonts/FontAwesome.otf", { destDir: "fonts" });
-
-// import d3.js
 app.import({
 	development: app.bowerDirectory + '/d3/d3.js',
 	production: app.bowerDirectory + '/d3/d3.min.js'
