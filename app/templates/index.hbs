@@ -1,26 +1,29 @@
 <div class="row">
-	<h5>What ingredients do you have?</h5>
-	<form class="col s12">
-	{{select-2 content=model.ingredients 
-		value=selectedIngredients 
-		multiple=true 
-		optionValuePath='id' 
-		placeholder="Choose ingredients"
-		allowClear=true}}
-	</form>
-</div>
-<hr>
-<div class="row">
-	<ul class="collection">
-	{{#each beverage in availableBeverages}}
-		<li class="collection-item">
-			{{#materialize-badge class="green lighten-4"}}
-				{{beverage.rank}} of {{beverage.ingredientsArray.length}}
-			{{/materialize-badge}}
-			{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}
-		</li>
-	{{else}}
-		<li class="collection-item">Nothing to display</li>
-	{{/each}}
-	</ul>
+	<div class="col s12">
+		<h5>What ingredients do you have?</h5>
+		{{select-2
+			id="ingredient-select"
+			content=model.ingredients 
+			value=selectedIngredients 
+			multiple=true 
+			optionValuePath='id' 
+			placeholder="What ingredients do you have?"
+			allowClear=true
+		}}
+	</div>
+	<div class="col s12">
+		<hr>
+		<ul class="collection">
+		{{#each beverage in availableBeverages}}
+			<li class="collection-item">
+				{{#materialize-badge class="green lighten-4"}}
+					{{beverage.rank}} of {{beverage.ingredientsArray.length}}
+				{{/materialize-badge}}
+				{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}
+			</li>
+		{{else}}
+			<li class="collection-item">Nothing to display</li>
+		{{/each}}
+		</ul>
+	</div>
 </div>

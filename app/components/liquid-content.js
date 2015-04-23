@@ -42,7 +42,7 @@ export default Ember.Component.extend({
 
 		var arc = d3.svg.arc().outerRadius(radius);
 
-		var myChart = d3.select('#pie-chart').append('svg')
+		var myChart = d3.select('#pie-chart').append('svg') // jshint ignore:line
 			.attr('width', width)
 			.attr('height', height)
 			.append('g')
@@ -51,15 +51,15 @@ export default Ember.Component.extend({
 				.enter().append('g')
 					.attr('class', 'slice');
 
-		var slices = d3.selectAll('g.slice')
+		var slices = d3.selectAll('g.slice') // jshint ignore:line
 			.append('path')
 				.attr('fill', function(d, i) {
 					return colors(i);
 				})
 				.attr('d', arc);
 
-		var text = d3.selectAll('g.slice').append('text')
-			.text(function(d, i) {
+		var text = d3.selectAll('g.slice').append('text') // jshint ignore:line
+			.text(function(d) {
 				return d.data.label;
 			})
 			.attr('text-anchor', 'middle')

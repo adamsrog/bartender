@@ -29,7 +29,7 @@ export default Ember.Controller.extend({
 
 					// adjust ranking for match
 					if (filteredBeverages[name].rank) {
-						filteredBeverages[name].rank++
+						filteredBeverages[name].rank++;
 					} else {
 						filteredBeverages[name].rank = 1;
 					}
