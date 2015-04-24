@@ -4,12 +4,12 @@ Prototype for an idea that helps someone make a drink from the ingredients they'
 
 ## To-Do List
 
-- [ ] Finalize data models
 - [ ] Finish adding beverages
 - [ ] Finish adding ingredients
 - [ ] Finish adding equipment
-- [ ] Build out search function
-- [ ] Determine BAAS to use (Firebase?)
+- [x] Implement social logins (GitHub, Google, Twitter, Facebook)
+- [ ] Allow commenting on beverages, ingredients and equipment
+- [ ] Allow creation of beverages, ingredients and equipment
 
 ## Prerequisites
 
