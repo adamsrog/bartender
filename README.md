@@ -10,6 +10,7 @@ Prototype for an idea that helps someone make a drink from the ingredients they'
 - [x] Implement social logins (GitHub, Google, Twitter, Facebook)
 - [ ] Allow commenting on beverages, ingredients and equipment
 - [ ] Allow creation of beverages, ingredients and equipment
+- [ ] WRITE TESTS!
 
 ## Prerequisites
 
