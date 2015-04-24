@@ -2,7 +2,11 @@
 	<div class="navbar-fixed">
 		<nav role="navigation">
 			<div class="nav-wrapper container">
-				{{#link-to 'index' class="brand-logo"}}<i class="mdi-maps-local-bar"> bartender</i>{{/link-to}}
+				{{#link-to 'index' class="brand-logo"}}
+					<i class="mdi-maps-local-bar">
+						<span class="hide-on-small-only">bartender</span>
+					</i>
+				{{/link-to}}
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					{{#link-to 'index' tagName="li"}}<a>home</a>{{/link-to}}
 					{{#link-to 'beverage' tagName="li"}}<a>drinks</a>{{/link-to}}
