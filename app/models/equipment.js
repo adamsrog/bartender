@@ -1,10 +1,10 @@
 import DS from 'ember-data';
 
 var Equipment = DS.Model.extend({
-  name: DS.attr(),
-  type: DS.attr(),
-  description: DS.attr(),
-  image: DS.attr()
+  name: DS.attr('string'),
+  type: DS.attr('string'),
+  description: DS.attr('string'),
+  image: DS.attr('string')
 });
 
 export default Equipment;

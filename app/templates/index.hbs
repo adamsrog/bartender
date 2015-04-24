@@ -15,12 +15,12 @@
 		<hr>
 		<ul class="collection">
 		{{#each beverage in availableBeverages}}
-			<li class="collection-item">
-				{{#materialize-badge class="green lighten-4"}}
+			{{#link-to 'beverage.view' beverage.id class="collection-item"}}
+				<span class="badge green lighten-4">
 					{{beverage.rank}} of {{beverage.ingredientsArray.length}}
-				{{/materialize-badge}}
-				{{#link-to 'beverage.view' beverage.id}}{{beverage.name}}{{/link-to}}
-			</li>
+				</span>
+				{{beverage.name}}
+			{{/link-to}}
 		{{else}}
 			<li class="collection-item">Nothing to display</li>
 		{{/each}}

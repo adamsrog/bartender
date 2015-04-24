@@ -12,9 +12,11 @@ export default Router.map(function() {
   });
   this.route('ingredient', function() {
     this.route('view', { path: '/:ingredient_id' });
+    this.route('new');
   });
   this.route('equipment', function() {
     this.route('view', { path: '/:equipment_id' });
+    this.route('new');
   });
   this.route('about');
 });
