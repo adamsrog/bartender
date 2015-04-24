@@ -6,6 +6,12 @@
 			<li {{action 'loginGoogle'}}><a>google</a></li>  
 			<li {{action 'loginTwitter'}}><a>twitter</a></li>
 		</ul>
+		<ul id="login-dropdown-mobile" class="dropdown-content">
+			<li {{action 'loginFacebook'}}><a>facebook</a></li>
+			<li {{action 'loginGithub'}}><a>github</a></li>
+			<li {{action 'loginGoogle'}}><a>google</a></li>  
+			<li {{action 'loginTwitter'}}><a>twitter</a></li>
+		</ul>
 		<nav role="navigation">
 			<div class="nav-wrapper container">
 				{{#link-to 'index' class="brand-logo"}}
@@ -29,7 +35,7 @@
 					{{#if session.isAuthenticated}}
 					<li {{action 'logout'}}><a>logout</a></li>
 					{{else}}
-					<li><a class="dropdown-button" data-activates="login-dropdown">login<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+					<li><a class="dropdown-button" data-activates="login-dropdown-mobile">login<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
 					{{/if}}
 					{{#link-to 'index' tagName="li"}}<a>home</a>{{/link-to}}
 					{{#link-to 'beverage' tagName="li"}}<a>drinks</a>{{/link-to}}
