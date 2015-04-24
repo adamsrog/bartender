@@ -6,5 +6,6 @@ export default Ember.View.extend({
 			menuWidth: 150,
 			closeOnClick: true
 		});
+		Ember.$(".dropdown-button").dropdown();
 	}
 });

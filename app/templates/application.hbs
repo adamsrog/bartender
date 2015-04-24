@@ -1,5 +1,11 @@
 <div id="wrapper">
 	<div class="navbar-fixed">
+		<ul id="login-dropdown" class="dropdown-content">
+			<li {{action 'loginFacebook'}}><a>facebook</a></li>
+			<li {{action 'loginGithub'}}><a>github</a></li>
+			<li {{action 'loginGoogle'}}><a>google</a></li>  
+			<li {{action 'loginTwitter'}}><a>twitter</a></li>
+		</ul>
 		<nav role="navigation">
 			<div class="nav-wrapper container">
 				{{#link-to 'index' class="brand-logo"}}
@@ -13,6 +19,13 @@
 					{{#link-to 'ingredient' tagName="li"}}<a>ingredients</a>{{/link-to}}
 					{{#link-to 'equipment' tagName="li"}}<a>equipment</a>{{/link-to}}
 					{{#link-to 'about' tagName="li"}}<a>about</a>{{/link-to}}
+					{{#if session.isAuthenticated}}
+					<li {{action 'logout'}}><a>logout</a></li>
+					{{else}}
+					<li>
+						<a class="dropdown-button" data-activates="login-dropdown">login<i class="mdi-navigation-arrow-drop-down right"></i></a>
+					</li>
+					{{/if}}
 				</ul>
 				<ul id="slide-out" class="side-nav">
 					{{#link-to 'index' tagName="li"}}<a>home</a>{{/link-to}}
