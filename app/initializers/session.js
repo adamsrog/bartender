@@ -57,7 +57,8 @@ var session = Ember.Object.extend({
 	},
 
 	logout: function() {
-		return this.get('ref').unauth();
+		this.get('ref').unauth();
+		location.reload();
 	},
 
 	currentUser: Ember.computed('isAuthenticated', function() {

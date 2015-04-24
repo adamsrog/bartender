@@ -2,11 +2,13 @@
 	<div class="col s12 m8">
 		<h4>
 			Equipment
+			{{#if session.isAuthenticated}}
 			<small>
 				{{#link-to 'equipment.new' class="btn-floating waves-effect waves-light green"}}
 					<i class="mdi-content-add"></i>
 				{{/link-to}}
 			</small>
+			{{/if}}
 		</h4>
 	</div>
 	<div class="col s12 m4">
