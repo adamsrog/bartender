@@ -1,5 +1,6 @@
 <div id="wrapper">
 	<div class="navbar-fixed">
+
 		<ul id="login-dropdown" class="dropdown-content">
 			<li {{action 'loginFacebook'}}><a>facebook</a></li>
 			<li {{action 'loginGithub'}}><a>github</a></li>
@@ -12,13 +13,23 @@
 			<li {{action 'loginGoogle'}}><a>google</a></li>  
 			<li {{action 'loginTwitter'}}><a>twitter</a></li>
 		</ul>
+
+		<ul id="logged-in-dropdown" class="dropdown-content">
+			<li {{action 'logout'}}><a>logout</a></li>
+		</ul>
+		<ul id="logged-in-dropdown-mobile" class="dropdown-content">
+			<li {{action 'logout'}}><a>logout</a></li>
+		</ul>
+
 		<nav role="navigation">
 			<div class="nav-wrapper container">
+
 				{{#link-to 'index' class="brand-logo"}}
 					<i class="mdi-maps-local-bar">
 						<span class="hide-on-small-only">bartender</span>
 					</i>
 				{{/link-to}}
+
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					{{#link-to 'index' tagName="li"}}<a>home</a>{{/link-to}}
 					{{#link-to 'beverage' tagName="li"}}<a>drinks</a>{{/link-to}}
@@ -26,14 +37,25 @@
 					{{#link-to 'equipment' tagName="li"}}<a>equipment</a>{{/link-to}}
 					{{#link-to 'about' tagName="li"}}<a>about</a>{{/link-to}}
 					{{#if session.isAuthenticated}}
-					<li {{action 'logout'}}><a>logout</a></li>
+					<li>
+						<a class="dropdown-button" data-activates="logged-in-dropdown">
+							<img src={{session.user.imageThumbUrl}} height="36" width="36" class="circle">
+							<i class="mdi-navigation-arrow-drop-down right"></i>
+						</a>
+					</li>
 					{{else}}
 					<li><a class="dropdown-button" data-activates="login-dropdown">login<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
 					{{/if}}
 				</ul>
+
 				<ul id="slide-out" class="side-nav">
 					{{#if session.isAuthenticated}}
-					<li {{action 'logout'}}><a>logout</a></li>
+					<li>
+						<a class="dropdown-button" data-activates="logged-in-dropdown-mobile">
+							<img src={{session.user.imageThumbUrl}} height="36" width="36" class="circle">
+							<i class="mdi-navigation-arrow-drop-down right"></i>
+						</a>
+					</li>
 					{{else}}
 					<li><a class="dropdown-button" data-activates="login-dropdown-mobile">login<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
 					{{/if}}
