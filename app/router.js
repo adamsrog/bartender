@@ -18,5 +18,8 @@ export default Router.map(function() {
     this.route('view', { path: '/:equipment_id' });
     this.route('new');
   });
+  this.route('user', function() {
+    this.route('favorites');
+  });
   this.route('about');
 });

@@ -15,6 +15,7 @@
 		</ul>
 
 		<ul id="logged-in-dropdown" class="dropdown-content">
+			{{#link-to 'user.favorites' tagName='li'}}<a>favorites</a>{{/link-to}}
 			<li {{action 'logout'}}><a>logout</a></li>
 		</ul>
 		<ul id="logged-in-dropdown-mobile" class="dropdown-content">

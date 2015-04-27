@@ -1,0 +1,13 @@
+<div class="row">
+	<div class="col s12">
+		<h3>{{session.user.displayName}}</h3>
+
+		<hr>
+		{{#if model.favorites}}
+			<h5>Favorite Beverages</h5>
+			{{#each favorite in model.favorites}}
+				{{favorite.name}}
+			{{/each}}
+		{{/if}}
+	</div>
+</div>

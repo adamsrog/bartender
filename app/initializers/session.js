@@ -64,6 +64,7 @@ var session = Ember.Object.extend({
 			if (authData) {
 				var user = parseAuthData(authData);
 				session.set('isAuthenticated', true);
+				session.set('uid', authData.uid);
 				session.set('user', user);
 				ref.child('users').child(authData.uid).set(user);
 			} else {
