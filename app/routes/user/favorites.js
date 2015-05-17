@@ -11,9 +11,9 @@ export default Ember.Route.extend({
 			test = snapshot.val();
 		});
 		console.log('test', test);
-		ref.child('users').child(uid).child('favoriteBeverages').update({
-			'abbey-cocktail': true
-		});
+		// ref.child('users').child(uid).child('favoriteBeverages').update({
+		// 	'abbey-cocktail': true
+		// });
 		console.log(this.get('session').uid);
 		return this.store.find('user', this.get('session').uid);
 	}

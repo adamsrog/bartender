@@ -13,7 +13,7 @@ var User = DS.Model.extend({
 	language: DS.attr('string'),
 	website: DS.attr('string'),
 
-	favoriteBeverages: DS.attr(),
+	favoriteBeverages: DS.hasMany('beverage', {async:true}),
 	favoriteIngredients: DS.attr(),
 	favoriteEquipment: DS.attr()
 });
