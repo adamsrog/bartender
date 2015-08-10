@@ -5,7 +5,7 @@ var Router = Ember.Router.extend({
   location: config.locationType
 });
 
-export default Router.map(function() {
+Router.map(function() {
   this.route('beverage', function() {
     this.route('view', { path: '/:beverage_id' });
     this.route('new');
@@ -23,3 +23,5 @@ export default Router.map(function() {
   });
   this.route('about');
 });
+
+export default Router;
