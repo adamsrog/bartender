@@ -17,7 +17,7 @@
 </div>
 
 <ul class="collection">
-	{{#each beverage in filteredList}}
+	{{#each filteredList as |beverage|}}
 		{{#link-to 'beverage.view' beverage.id class="collection-item"}}
 			{{beverage.name}}
 		{{/link-to}}

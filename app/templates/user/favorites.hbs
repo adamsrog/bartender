@@ -5,7 +5,7 @@
 		<hr>
 		{{#if model.favorites}}
 			<h5>Favorite Beverages</h5>
-			{{#each favorite in model.favorites}}
+			{{#each model.favorites as |favorite|}}
 				{{favorite.name}}
 			{{/each}}
 		{{/if}}

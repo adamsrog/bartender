@@ -17,7 +17,7 @@
 </div>
 
 <ul class="collection">
-	{{#each equipment in filteredList}}
+	{{#each filteredList as |equipment|}}
 		{{#link-to 'equipment.view' equipment.id class="collection-item"}}
 			<span class="badge green lighten-4">{{equipment.type}}</span>
 			{{equipment.name}}

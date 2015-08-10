@@ -14,7 +14,7 @@
 	<div class="col s12">
 		<hr>
 		<ul class="collection">
-		{{#each beverage in availableBeverages}}
+		{{#each availableBeverages as |beverage|}}
 			{{#link-to 'beverage.view' beverage.id class="collection-item"}}
 				<span class="badge green lighten-4">
 					{{beverage.rank}} of {{beverage.ingredientsArray.length}}

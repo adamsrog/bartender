@@ -11,7 +11,7 @@
 	<div class="col m6 s12">
 		<h5>Ingredients</h5>
 		<ul class="collection">
-		{{#each ingredient in model.combined}}
+		{{#each model.combined as ingredient}}
 			<li class="collection-item">
 				<span class="badge blue lighten-4">
 					{{ingredient.amount}} {{ingredient.measurement}}
@@ -24,7 +24,7 @@
 	<div class="col m6 s12">
 		<h5>Steps</h5>
 		<ol class="collection">
-		{{#each step in model.steps}}
+		{{#each model.steps as |step|}}
 			<li class="collection-item">{{step}}</li>
 		{{/each}}
 		</ol>
