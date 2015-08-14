@@ -1,0 +1,79 @@
+<div class="row">
+	<div class="col s12">
+		<h4>New Beverage</h4>
+	</div>
+	<div class="col s12 m6">
+		{{md-input value=name label="Name"}}
+	</div>
+	<div class="col s12 m6">
+		{{md-input value=beverage_id label="ID"}}
+	</div>
+	<div class="col s12 m6">
+		{{md-input value=type label="Type"}}
+	</div>
+	<div class="col s12 m6">
+		{{md-input value=description label="Description"}}
+	</div>
+	<div class="col s12 m12">
+		{{select-2
+			content=model.equipment
+			value=equipment
+			optionDescriptionPath="text"
+			placeholder="Equipment"
+		}}
+	</div>
+	<hr>
+	<h5>Ingredients <a class="btn-floating waves-effect waves-light green" {{action 'addIngredient'}}><i class="mdi-content-add"></i></a></h5>
+	{{#each ingredientsArray as |ingredient index|}}
+		<div class="row">
+			<div class="col s1 m1">
+				<a class="btn-floating waves-effect waves-light green" {{action "removeIngredient" index}}>
+					<i class="mdi-content-remove"></i>
+				</a>
+			</div>
+			<div class="col s2 m2">
+				{{md-input value=ingredient.amount label="Amount"}}
+			</div>
+			<div class="col s2 m2">
+				{{md-input value=ingredient.measurement label="Measurement"}}
+			</div>
+			<div class="col s7 m7">
+				{{select-2
+					content=model.ingredients
+					value=ingredient.id
+					optionValuePath="id"
+					placeholder="Ingredient"
+				}}
+			</div>
+		</div>
+	{{/each}}
+	<hr>
+	<h5>Steps <small {{action 'addStep'}}><i class="mdi-content-add"></i></small></h5>
+	{{#each steps as |step index|}}
+		<div class="col s1 m1">
+			<a class="btn-floating waves-effect waves-light green" {{action "removeStep" index}}>
+				<i class="mdi-content-remove"></i>
+			</a>
+		</div>
+		<div class="col s11 m11">
+		  {{md-input value=step label=index}}
+		</div>
+	{{/each}}
+	{{#if error}}
+	<div class="col s12 right-align">
+		<div class="card-panel">
+			<span class="red-text text-darken-2">{{error}}</span>
+		</div>
+	</div>
+	{{/if}}
+	<div class="col s12 right-align">
+		<a class="waves-effect waves-light red darken-2 btn" {{action 'cancel'}}>
+			<i class="mdi-navigation-cancel left"></i>
+			<span class="hide-on-small-only">Cancel</span>
+		</a>
+		<a class="waves-effect waves-light green darken-2 btn" {{action 'saveIngredient'}}>
+			<i class="mdi-content-save left"></i>
+			<span class="hide-on-small-only">Save Ingredient</span>
+		</a>
+	</div>
+</div>
