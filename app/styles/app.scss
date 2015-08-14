@@ -18,3 +18,26 @@ $link-color: color("light-blue", "darken-1") !default;
  
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+.select-box {
+	position: relative;
+	padding: 30px 15px 15px 15px;
+}
+.select-box:before {
+	position: absolute;
+	left: 15px;
+	top: 4px;
+	font-size: 0.8rem;
+	color: #9e9e9e;
+}
+.select-box .select2-container {
+	width: 100%;
+}
+
+.ingredient-box:before {
+	content: "Select Ingredient";
+}
+
+.equipment-box:before {
+	content: "Select Glassware";
+}

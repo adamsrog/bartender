@@ -11,7 +11,7 @@ export default Ember.Controller.extend({
 	ingredientsArray: [{amount:1, measurement:'oz', name:''}],
 	name: '',
 	steps: [''],
-	type: '',
+	type: 'cocktail',
 
 	actions: {
 		addIngredient: function() {
@@ -20,7 +20,8 @@ export default Ember.Controller.extend({
 		},
 		removeIngredient: function(index) {
 			var ingredients = this.get('ingredientsArray');
-			ingredients.removeAt(index);
+			// don't allow deletion of final item
+			if (ingredients.length > 1) { ingredients.removeAt(index); }
 		},
 		addStep: function() {
 			var steps = this.get('steps');
@@ -28,7 +29,8 @@ export default Ember.Controller.extend({
 		},
 		removeStep: function(index) {
 			var steps = this.get('steps');
-			steps.removeAt(index);
+			// don't allow deletion of final item
+			if (steps.length > 1) { steps.removeAt(index); }
 		}
 	}
 });

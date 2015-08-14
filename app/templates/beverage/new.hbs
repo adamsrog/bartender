@@ -2,61 +2,77 @@
 	<div class="col s12">
 		<h4>New Beverage</h4>
 	</div>
-	<div class="col s12 m6">
-		{{md-input value=name label="Name"}}
+</div>
+<div class="row">
+	<div class="col s12 m9">
+		{{md-input value=name label="Name" required=true}}
 	</div>
-	<div class="col s12 m6">
-		{{md-input value=beverage_id label="ID"}}
+	<div class="col s6 m3">
+		{{md-input value=beverage_id label="ID" required=true}}
 	</div>
-	<div class="col s12 m6">
-		{{md-input value=type label="Type"}}
+</div>
+<div class="row">
+	<div class="col s12 m9">
+		{{md-input value=description label="Description" required=true}}
 	</div>
-	<div class="col s12 m6">
-		{{md-input value=description label="Description"}}
+	<div class="col s12 m3">
+		<div class="select-box equipment-box">
+			{{select-2
+				content=model.glassware
+				value=equipment
+				optionValuePath="id"
+				optionDescriptionPath="name"
+				placeholder="Glassware"
+			}}
+		</div>
 	</div>
-	<div class="col s12 m12">
-		{{select-2
-			content=model.equipment
-			value=equipment
-			optionDescriptionPath="text"
-			placeholder="Equipment"
-		}}
-	</div>
+</div>
 	<hr>
 	<h5>Ingredients <a class="btn-floating waves-effect waves-light green" {{action 'addIngredient'}}><i class="mdi-content-add"></i></a></h5>
 	{{#each ingredientsArray as |ingredient index|}}
 		<div class="row">
 			<div class="col s1 m1">
-				<a class="btn-floating waves-effect waves-light green" {{action "removeIngredient" index}}>
-					<i class="mdi-content-remove"></i>
-				</a>
+				<h5>{{add-one index}}</h5>
 			</div>
 			<div class="col s2 m2">
-				{{md-input value=ingredient.amount label="Amount"}}
+				{{md-input value=ingredient.amount label="Amount" type="number"}}
 			</div>
 			<div class="col s2 m2">
 				{{md-input value=ingredient.measurement label="Measurement"}}
 			</div>
-			<div class="col s7 m7">
-				{{select-2
-					content=model.ingredients
-					value=ingredient.id
-					optionValuePath="id"
-					placeholder="Ingredient"
-				}}
+			<div class="col s6 m6">
+				<div class="select-box ingredient-box">
+					{{select-2
+						content=model.ingredients
+						value=ingredient.id
+						optionValuePath="id"
+						optionDescriptionPath="null"
+						placeholder="Ingredient"
+					}}
+				</div>
+			</div>
+			<div class="col s1 m1">
+				<a class="btn-floating waves-effect waves-light green" {{action "removeIngredient" index}}>
+					<i class="mdi-content-remove"></i>
+				</a>
 			</div>
 		</div>
 	{{/each}}
 	<hr>
-	<h5>Steps <small {{action 'addStep'}}><i class="mdi-content-add"></i></small></h5>
+	<h5>Steps <a class="btn-floating waves-effect waves-light green" {{action 'addStep'}}><i class="mdi-content-add"></i></a></h5>
 	{{#each steps as |step index|}}
-		<div class="col s1 m1">
-			<a class="btn-floating waves-effect waves-light green" {{action "removeStep" index}}>
-				<i class="mdi-content-remove"></i>
-			</a>
-		</div>
-		<div class="col s11 m11">
-		  {{md-input value=step label=index}}
+		<div class="row">
+			<div class="col s1 m1">
+				<h5>{{add-one index}}</h5>
+			</div>
+			<div class="col s10 m10">
+				{{md-input value=step}}
+			</div>
+			<div class="col s1 m1">
+				<a class="btn-floating waves-effect waves-light green" {{action "removeStep" index}}>
+					<i class="mdi-content-remove"></i>
+				</a>
+			</div>
 		</div>
 	{{/each}}
 	{{#if error}}
@@ -76,4 +92,3 @@
 			<span class="hide-on-small-only">Save Ingredient</span>
 		</a>
 	</div>
-</div>
